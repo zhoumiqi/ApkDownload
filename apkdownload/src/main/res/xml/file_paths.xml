@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <paths>
+        <!--<root-path/> 代表设备的根目录new File("/")-->
+        <!--path即为代表目录下的子目录，比如：
+        <external-path
+        name="external"
+        path="pics" />
+        代表的目录即为：Environment.getExternalStorageDirectory()/pics
+        -->
+        <root-path
+            name="root"
+            path="" />
+        <!--<files-path/> 代表context.getFilesDir()-->
+        <files-path
+            name="files"
+            path="" />
+        <!--<cache-path/> 代表context.getCacheDir()-->
+        <cache-path
+            name="cache"
+            path="" />
+        <!--<external-path/> 代表Environment.getExternalStorageDirectory()-->
+        <external-path
+            name="external"
+            path="" />
+        <!--<external-files-path>代表context.getExternalFilesDirs()-->
+        <external-files-path
+            name="external_file_path"
+            path="" />
+        <!--<external-cache-path>代表getExternalCacheDirs()-->
+        <external-cache-path
+            name="external_cache_path"
+            path="" />
+    </paths>
+</resources>

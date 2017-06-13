@@ -2,6 +2,7 @@
 使用方法：
 1、在 build.gradle dependencies添加
 compile 'com.zmq.apkdownload:apkdownload:0.0.2'
+
 2、API调用示例:
 ApkMgr.getInstance(this).download(url, new ApkMgr.DownLoadListener() {
 

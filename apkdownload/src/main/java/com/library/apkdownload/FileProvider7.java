@@ -45,7 +45,7 @@ public class FileProvider7 {
      */
     private static Uri getFileUriOn24(Context context, File file) {
         return FileProvider.getUriForFile(context,
-                BuildConfig.APPLICATION_ID + ".fileprovider",
+                context.getPackageName() + ".fileprovider",
                 file);
     }
 

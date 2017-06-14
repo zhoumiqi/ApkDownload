@@ -3,7 +3,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
 // 根节点添加
-version = "0.0.2"
+version = "1.0.0"
 // 根节点添加
 def siteUrl = 'https://github.com/zhoumiqi/ApkDownload'    // project homepage
 def gitUrl = 'https://github.com/zhoumiqi/ApkDownload.git' // project git

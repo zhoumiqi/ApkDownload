@@ -54,9 +54,9 @@ install {
                 }
                 developers {
                     developer { //填写的一些基本信息
-                        id 'zhoumiqi'
-                        name 'zhoumiqi'
-                        email 'zzhoumiqi@sina.com'
+                        id 'zhoumiqi'//公司的id
+                        name 'zhoumiqi' //用户名
+                        email 'zzhoumiqi@sina.com'// 你的邮箱
                     }
                 }
                 scm {
@@ -68,11 +68,12 @@ install {
         }
     }
 }
-
+// 生成jar包的task
 task sourcesJar(type: Jar) {
     from android.sourceSets.main.java.srcDirs
     classifier = 'sources'
 }
+// 生成javaDoc的jar
 task javadoc(type: Javadoc) {
     source = android.sourceSets.main.java.srcDirs
     classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
@@ -81,6 +82,7 @@ task javadocJar(type: Jar, dependsOn: javadoc) {
     classifier = 'javadoc'
     from javadoc.destinationDir
 }
+//下面设置编码格式
 javadoc {
     options {
         encoding "UTF-8"

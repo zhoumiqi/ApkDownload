@@ -1,4 +1,7 @@
 # ApkDownload主要功能：利用系统DownloadManager封装实现APK的下载、通知栏提示、安装，并适配至7.0系统。
+
+![首页](apkdownload.gif)
+
 使用方法：
 
 1、在 build.gradle dependencies添加
